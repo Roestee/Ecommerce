@@ -442,12 +442,10 @@ input {
   overflow: hidden;
   border-radius: 1.25rem;
   height: 300px;
-  width: 295px;
 }
 
 .product__img {
   height: 100%;
-  width: 100%;
   vertical-align: middle;
   transition: all 1.2s var(--transition);
 }
