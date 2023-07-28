@@ -419,7 +419,7 @@ input {
 .product__item {
   height: 450px;
   border: 1px solid var(--body-color);
-  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.3);
   transition: all 0.2s var(--transition);
   border-radius: 1.5rem;
 }
@@ -588,7 +588,7 @@ input {
 }
 
 .product__item:hover {
-  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+  box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.4);
 }
 
 .product__item:hover .product__img.hover,
