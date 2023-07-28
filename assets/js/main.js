@@ -250,6 +250,10 @@ window.onload = async function () {
     true,
     true
   );
+
+  /*=========== Render Shop Products =========*/
+  let totalContainer = document.querySelector("#totalContainer");
+  renderProducts(transferedData, totalContainer);
 };
 
 /*=============== SWIPER CATEGORIES ===============*/
