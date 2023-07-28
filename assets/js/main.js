@@ -1,7 +1,9 @@
 /*=============== DATA FETCH ===============*/
 window.onload = async function () {
   let originalData = await fetch("assets/data/data.json");
+  let categoryData = await fetch("assets/data/categoryData.json");
   let transferedData = await originalData.json();
+  let transferedCategoryData = await categoryData.json();
 
   /*=============== SHOW MENU ===============*/
 
@@ -13,73 +15,56 @@ window.onload = async function () {
 
   /*=============== IMAGE GALLERY ===============*/
 
-  /*=============== SWIPER CATEGORIES ===============*/
-  var swiperCategories = new Swiper(".categories__container", {
-    spaceBetween: 24,
-    loop: true,
+  /*=============== CATEGORY ===============*/
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  let categoryContainer = document.querySelector("#categoryContainer");
+  function renderCategories(dataArray) {
+    categoryContainer.innerHTML = "";
+    dataArray.forEach((item) => {
+      let categoryItem = createCategoryItem(item);
+      categoryContainer.appendChild(categoryItem);
+    });
+  }
 
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1400: {
-        slidesPerView: 6,
-        spaceBetween: 24,
-      },
-    },
-  });
+  function createCategoryItem(item) {
+    let categoryItem = document.createElement("a");
+    categoryItem.classList.add("category__item", "swiper-slide");
+    categoryItem.href = "shop.html";
 
-  /*=============== SWIPER PRODUCTS ===============*/
-  var swiperProducts = new Swiper(".new__container", {
-    spaceBetween: 24,
-    loop: true,
+    let categoryImg = document.createElement("img");
+    categoryImg.src = item.srcImg;
+    categoryImg.classList.add("category__img");
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+    let categoryTitle = document.createElement("h3");
+    categoryTitle.classList.add("category__title");
+    categoryTitle.innerHTML = item.categoryName;
 
-    breakpoints: {
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 24,
-      },
-    },
-  });
+    categoryItem.appendChild(categoryImg);
+    categoryItem.appendChild(categoryTitle);
+
+    return categoryItem;
+  }
 
   /*=============== PRODUCTS ===============*/
 
   let featuredContainer = document.querySelector("#featuredContainer");
   let popularContainer = document.querySelector("#popularContainer");
   let newContainer = document.querySelector("#newContainer");
+  let newArrivalContainer = document.querySelector("#newArrivalContainer");
 
   function renderProducts(
     dataArray,
     container,
     isPopular = false,
-    isNew = false
+    isNew = false,
+    isNewArrivals = false
   ) {
     container.innerHTML = "";
     dataArray.forEach((item) => {
       let productItem = createProductItem(item, isPopular, isNew);
+      if (isNewArrivals) {
+        productItem.classList.add("swiper-slide");
+      }
       container.appendChild(productItem);
     });
   }
@@ -238,6 +223,12 @@ window.onload = async function () {
     return cartBtn;
   }
 
+  /*=============== RENDER ===============*/
+
+  /*=========== Render Categories =========*/
+  renderCategories(transferedCategoryData);
+
+  /*=========== Render Products =========*/
   renderProducts(transferedData, featuredContainer);
   renderProducts(
     transferedData.filter((p) => p.isPopular === true),
@@ -251,23 +242,84 @@ window.onload = async function () {
     true
   );
 
-  /*=============== PRODUCTS TABS ===============*/
-  const tabs = document.querySelectorAll("[data-target]");
-  const tabContents = document.querySelectorAll("[content]");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = document.querySelector(tab.dataset.target);
-      tabContents.forEach((tabContent) => {
-        tabContent.classList.remove("active-tab");
-      });
-
-      target.classList.add("active-tab");
-
-      tabs.forEach((tab) => {
-        tab.classList.remove("active-tab");
-      });
-      tab.classList.add("active-tab");
-    });
-  });
+  /*=========== Render New Arrival =========*/
+  renderProducts(
+    transferedData.filter((p) => p.isNew === true),
+    newArrivalContainer,
+    false,
+    true,
+    true
+  );
 };
+
+/*=============== SWIPER CATEGORIES ===============*/
+var swiperCategories = new Swiper(".categories__container", {
+  spaceBetween: 24,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1400: {
+      slidesPerView: 6,
+      spaceBetween: 24,
+    },
+  },
+});
+
+/*=============== SWIPER PRODUCTS ===============*/
+var swiperProducts = new Swiper(".new__container", {
+  spaceBetween: 24,
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
+
+/*=============== PRODUCTS TABS ===============*/
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active-tab");
+    });
+
+    target.classList.add("active-tab");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("active-tab");
+    });
+    tab.classList.add("active-tab");
+  });
+});

@@ -1,0 +1,22 @@
+[
+  { "id": 0, "categoryName": "T-shirt", "srcImg": "assets/img/category-1.jpg" },
+  { "id": 1, "categoryName": "Bags", "srcImg": "assets/img/category-2.jpg" },
+  { "id": 2, "categoryName": "Sandal", "srcImg": "assets/img/category-3.jpg" },
+  {
+    "id": 3,
+    "categoryName": "Scarf Cap",
+    "srcImg": "assets/img/category-4.jpg"
+  },
+  { "id": 4, "categoryName": "Shoes", "srcImg": "assets/img/category-5.jpg" },
+  {
+    "id": 5,
+    "categoryName": "Pillowcase",
+    "srcImg": "assets/img/category-6.jpg"
+  },
+  {
+    "id": 6,
+    "categoryName": "Jumpsuit",
+    "srcImg": "assets/img/category-7.jpg"
+  },
+  { "id": 7, "categoryName": "Hats", "srcImg": "assets/img/category-8.jpg" }
+]
