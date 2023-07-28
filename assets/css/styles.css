@@ -417,6 +417,7 @@ input {
 }
 
 .product__item {
+  height: 450px;
   border: 1px solid var(--body-color);
   box-shadow: 0 0 3px hsla(0, 0%, 0%, 0.1);
   transition: all 0.2s var(--transition);
@@ -440,9 +441,13 @@ input {
   display: block;
   overflow: hidden;
   border-radius: 1.25rem;
+  height: 300px;
+  width: 300px;
 }
 
 .product__img {
+  height: 100%;
+  width: 100%;
   vertical-align: middle;
   transition: all 1.2s var(--transition);
 }
@@ -543,6 +548,8 @@ input {
 .product__title {
   font-size: var(--normal-font-size);
   margin-block: 0.75rem 0.5rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .product__rating {
