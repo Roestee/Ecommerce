@@ -85,7 +85,7 @@ window.onload = async function () {
     productBanner.classList.add("product__banner");
 
     let productImages = document.createElement("a");
-    productImages.href = "details.html";
+    productImages.href = `details.html?id=${item.id}`;
     productImages.classList.add("product__images");
 
     let defaultImage = document.createElement("img");
