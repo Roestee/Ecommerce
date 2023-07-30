@@ -1034,7 +1034,7 @@ input {
 .color__list,
 .size__list {
   display: flex;
-  column-gap: 0.25rem;
+  column-gap: 0.35rem;
 }
 
 .color__link {
