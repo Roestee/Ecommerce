@@ -13,8 +13,6 @@ window.onload = async function () {
   /*===== Hide Show =====*/
   /* Validate if constant exists */
 
-  /*=============== IMAGE GALLERY ===============*/
-
   /*=============== CATEGORY ===============*/
 
   let categoryContainer = document.querySelector("#categoryContainer");
