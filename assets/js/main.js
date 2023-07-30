@@ -224,7 +224,7 @@ window.onload = async function () {
   /*=============== RENDER ===============*/
 
   /*=========== Render Categories =========*/
-  renderCategories(transferedCategoryData);
+  renderCategories(transferedCategoryData, categoryContainer);
 
   /*=========== Render Products =========*/
   renderProducts(transferedData, featuredContainer);
@@ -248,10 +248,6 @@ window.onload = async function () {
     true,
     true
   );
-
-  /*=========== Render Shop Products =========*/
-  let totalContainer = document.querySelector("#totalContainer");
-  renderProducts(transferedData, totalContainer);
 };
 
 /*=============== SWIPER CATEGORIES ===============*/
@@ -269,11 +265,11 @@ var swiperCategories = new Swiper(".categories__container", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
+    800: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
-    1400: {
+    1300: {
       slidesPerView: 6,
       spaceBetween: 24,
     },
