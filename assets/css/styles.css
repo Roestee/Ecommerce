@@ -572,6 +572,10 @@ input {
   right: 1.25rem;
 }
 
+.cart__btn i {
+  pointer-events: none;
+}
+
 /* Active Tab */
 .tab__btn.active-tab {
   color: var(--first-color);

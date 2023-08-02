@@ -200,7 +200,7 @@ window.onload = async function () {
       priceParent.appendChild(price);
     }
 
-    let cartBtn = createCartBtn();
+    let cartBtn = createCartBtn(item);
 
     productContent.appendChild(category);
     productContent.appendChild(detailLink);
@@ -211,14 +211,36 @@ window.onload = async function () {
     return productContent;
   }
 
-  function createCartBtn() {
+  function createCartBtn(item) {
     let cartBtn = document.createElement("a");
-    cartBtn.href = "#";
     cartBtn.classList.add("action__btn", "cart__btn");
+    cartBtn.setAttribute("data-id", item.id);
     cartBtn.setAttribute("aria-label", "Add To Cart");
-    cartBtn.innerHTML = `<i class="fi fi-rs-shopping-bag-add"></i>`;
+    let i = document.createElement("i");
+    i.classList.add("fi", "fi-rs-shopping-bag-add");
+    cartBtn.appendChild(i);
+    cartBtn.addEventListener("click", addToCart);
 
     return cartBtn;
+  }
+
+  function addToCart(event) {
+    const itemId = event.target.getAttribute("data-id");
+    console.log(event.target);
+    const itemInfo = {
+      id: itemId,
+      quantity: 1,
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let itemIndex = cart.findIndex((p) => p.id == itemId);
+    if (itemIndex === -1) {
+      cart.push(itemInfo);
+    } else {
+      cart[itemIndex].quantity++;
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 
   /*=============== RENDER ===============*/

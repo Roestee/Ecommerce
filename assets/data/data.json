@@ -10,7 +10,7 @@
     "srcImgBack": "assets/img/product-1-2.jpg",
     "isNew": false,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR1",
     "Stock": 10,
     "ColorOpts": []
@@ -26,7 +26,7 @@
     "srcImgBack": "assets/img/product-2-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR2",
     "Stock": 10,
     "ColorOpts": []
@@ -42,7 +42,7 @@
     "srcImgBack": "assets/img/product-3-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "SHOECR1",
     "Stock": 10,
     "ColorOpts": []
@@ -58,7 +58,7 @@
     "srcImgBack": "assets/img/product-4-2.jpg",
     "isNew": false,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "JSCR1",
     "Stock": 10,
     "ColorOpts": []
@@ -74,7 +74,7 @@
     "srcImgBack": "assets/img/product-5-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "SCCR1",
     "Stock": 10,
     "ColorOpts": []
@@ -90,7 +90,7 @@
     "srcImgBack": "assets/img/product-6-2.jpg",
     "isNew": false,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR3",
     "Stock": 10,
     "ColorOpts": []
@@ -106,7 +106,7 @@
     "srcImgBack": "assets/img/product-7-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR4",
     "Stock": 10,
     "ColorOpts": []
@@ -122,7 +122,7 @@
     "srcImgBack": "assets/img/product-8-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR5",
     "Stock": 10,
     "ColorOpts": []
@@ -138,7 +138,7 @@
     "srcImgBack": "assets/img/product-9-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR6",
     "Stock": 10,
     "ColorOpts": []
@@ -154,7 +154,7 @@
     "srcImgBack": "assets/img/product-10-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "SANDALCR1",
     "Stock": 10,
     "ColorOpts": []
@@ -170,7 +170,7 @@
     "srcImgBack": "assets/img/product-11-2.jpg",
     "isNew": false,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "JSCR2",
     "Stock": 10,
     "ColorOpts": []
@@ -186,7 +186,7 @@
     "srcImgBack": "assets/img/product-12-2.jpg",
     "isNew": true,
     "isPopular": false,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "TSCR7",
     "Stock": 10,
     "ColorOpts": []
@@ -202,7 +202,7 @@
     "srcImgBack": "assets/img/product-13-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "BAGCR1",
     "Stock": 10,
     "ColorOpts": []
@@ -218,7 +218,7 @@
     "srcImgBack": "assets/img/product-14-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "PCASECR1",
     "Stock": 10,
     "ColorOpts": []
@@ -234,7 +234,7 @@
     "srcImgBack": "assets/img/product-15-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "BAGCR2",
     "Stock": 10,
     "ColorOpts": []
@@ -250,7 +250,7 @@
     "srcImgBack": "assets/img/product-16-2.jpg",
     "isNew": true,
     "isPopular": true,
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, facere provident ipsam ex quisquam placeat sequi cumque asperiores obcaecati itaque dolorem magnam aut maxime mollitia modi at veniam doloribus quasi omnis. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
+    "description": "Praesentium, facere provident ipsam ex. Recusandae odio perferendis cupiditate maxime mollitia ab deleniti quis.",
     "Sku": "BAGCR3",
     "Stock": 10,
     "ColorOpts": []
