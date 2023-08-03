@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Colorful Mushroom Pattern Shirt",
     "price": 238.85,
     "discount": 15,
@@ -17,7 +17,7 @@
   },
   {
     "id": 1,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Colorful Flower Pattern Shirt",
     "price": 240.25,
     "discount": 20,
@@ -33,7 +33,7 @@
   },
   {
     "id": 2,
-    "category": "Shoes",
+    "category": 4,
     "title": "Casual Sneakers",
     "price": 240.31,
     "discount": 0,
@@ -49,7 +49,7 @@
   },
   {
     "id": 3,
-    "category": "Jumpsuit",
+    "category": 6,
     "title": "Colorful Jumpsuit",
     "price": 500.66,
     "discount": 30,
@@ -65,7 +65,7 @@
   },
   {
     "id": 4,
-    "category": "Scarf Cap",
+    "category": 3,
     "title": "Colorful Flower Pattern Cap",
     "price": 100.99,
     "discount": 10,
@@ -81,7 +81,7 @@
   },
   {
     "id": 5,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Purple Flower Shirt",
     "price": 250.03,
     "discount": 20,
@@ -97,7 +97,7 @@
   },
   {
     "id": 6,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Pattern Woman Shirt",
     "price": 200.0,
     "discount": 10,
@@ -113,7 +113,7 @@
   },
   {
     "id": 7,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Strip Two Color Shirt",
     "price": 300.0,
     "discount": 5,
@@ -129,7 +129,7 @@
   },
   {
     "id": 8,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Colorful Leaf Pattern Shirt",
     "price": 250.0,
     "discount": 12,
@@ -145,7 +145,7 @@
   },
   {
     "id": 9,
-    "category": "Sandal",
+    "category": 2,
     "title": "Colorful Flower Pattern Sandal",
     "price": 125.0,
     "discount": 0,
@@ -161,7 +161,7 @@
   },
   {
     "id": 10,
-    "category": "Jumpsuit",
+    "category": 6,
     "title": "Flower Pattern Jumpsuit",
     "price": 550.0,
     "discount": 20,
@@ -177,7 +177,7 @@
   },
   {
     "id": 11,
-    "category": "T-Shirt",
+    "category": 0,
     "title": "Half Flower Pattern Shirt",
     "price": 150.0,
     "discount": 0,
@@ -193,7 +193,7 @@
   },
   {
     "id": 12,
-    "category": "Bags",
+    "category": 1,
     "title": "Green Bag",
     "price": 800.0,
     "discount": 5,
@@ -209,7 +209,7 @@
   },
   {
     "id": 13,
-    "category": "Pillowcase",
+    "category": 5,
     "title": "Green Bag",
     "price": 50.0,
     "discount": 2,
@@ -225,7 +225,7 @@
   },
   {
     "id": 14,
-    "category": "Bags",
+    "category": 1,
     "title": "Yellow Bag",
     "price": 820.0,
     "discount": 5,
@@ -241,7 +241,7 @@
   },
   {
     "id": 15,
-    "category": "Bags",
+    "category": 1,
     "title": "Purple Pattern Bag",
     "price": 1200.0,
     "discount": 5,

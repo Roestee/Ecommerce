@@ -161,7 +161,11 @@ window.onload = async function () {
 
     let category = document.createElement("span");
     category.classList.add("product__category");
-    category.innerHTML = item.category;
+    var categoryName = transferedCategoryData.find(
+      (p) => p.id === item.category
+    ).categoryName;
+
+    category.innerHTML = categoryName;
 
     let detailLink = document.createElement("a");
     let title = document.createElement("h3");
