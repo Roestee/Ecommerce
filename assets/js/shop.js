@@ -133,7 +133,7 @@ window.onload = async function () {
       priceParent.appendChild(price);
     }
 
-    let cartBtn = createCartBtn();
+    let cartBtn = createCartBtn(item);
 
     productContent.appendChild(category);
     productContent.appendChild(detailLink);
@@ -144,14 +144,37 @@ window.onload = async function () {
     return productContent;
   }
 
-  function createCartBtn() {
+  function createCartBtn(item) {
     let cartBtn = document.createElement("a");
     cartBtn.href = "#";
     cartBtn.classList.add("action__btn", "cart__btn");
+    cartBtn.setAttribute("data-id", item.id);
     cartBtn.setAttribute("aria-label", "Add To Cart");
-    cartBtn.innerHTML = `<i class="fi fi-rs-shopping-bag-add"></i>`;
+    let i = document.createElement("i");
+    i.classList.add("fi", "fi-rs-shopping-bag-add");
+    cartBtn.appendChild(i);
+    cartBtn.addEventListener("click", addToCart);
 
     return cartBtn;
+  }
+
+  function addToCart(event) {
+    const itemId = event.target.getAttribute("data-id");
+    const itemInfo = {
+      id: itemId,
+      quantity: 1,
+    };
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let itemIndex = cart.findIndex((p) => p.id == itemId);
+    if (itemIndex === -1) {
+      cart.push(itemInfo);
+    } else {
+      cart[itemIndex].quantity++;
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    addCartTotalQuantity();
   }
 
   let pagination = document.querySelector(".pagination");
@@ -227,4 +250,25 @@ window.onload = async function () {
   totalProductCount.innerHTML = transferedData.length;
 
   createPagination();
+
+  function addCartTotalQuantity() {
+    let quantity = 0;
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.forEach((p) => {
+      if (p.id !== null) {
+        quantity += p.quantity;
+      }
+
+      let totalQuantity = document.querySelector("#cart__total-quantity");
+      if (quantity === 0) {
+        totalQuantity.innerHTML = "";
+        totalQuantity.classList.add("deactivate");
+      } else {
+        totalQuantity.innerHTML = quantity;
+        totalQuantity.classList.remove("deactivate");
+      }
+    });
+  }
+
+  addCartTotalQuantity();
 };

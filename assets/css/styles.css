@@ -266,6 +266,10 @@ input {
   font-size: var(--tiny-font-size);
 }
 
+.deactive {
+  opacity: 0;
+}
+
 /* Active link */
 .active-link,
 .nav__link:hover {
@@ -1178,6 +1182,7 @@ input {
 
 .table__trash {
   color: var(--text-color-light);
+  cursor: pointer;
 }
 
 .cart__actions {

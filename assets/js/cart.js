@@ -104,6 +104,7 @@ window.onload = async function () {
 
     localStorage.setItem("cart", JSON.stringify(newCart));
     tr.remove();
+    addCartTotalQuantity();
   }
 
   function changeQuantity(event) {
@@ -120,10 +121,34 @@ window.onload = async function () {
         removeItem(itemId);
       } else {
         localStorage.setItem("cart", JSON.stringify(cart));
-        displayCart();
+        addCartTotalQuantity();
       }
+
+      displayCart();
     }
   }
 
   displayCart();
+
+  function addCartTotalQuantity() {
+    let quantity = 0;
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.forEach((p) => {
+      if (p.id !== null) {
+        quantity += parseInt(p.quantity);
+      }
+      let totalQuantity = document.querySelector("#cart__total-quantity");
+
+      console.log(quantity);
+      if (quantity == 0) {
+        totalQuantity.innerHTML = "";
+        totalQuantity.classList.add("deactivate");
+      } else {
+        totalQuantity.innerHTML = quantity;
+        totalQuantity.classList.remove("deactivate");
+      }
+    });
+  }
+
+  addCartTotalQuantity();
 };

@@ -217,6 +217,7 @@ window.onload = async function () {
 
   function createCartBtn(item) {
     let cartBtn = document.createElement("a");
+    cartBtn.href = "#";
     cartBtn.classList.add("action__btn", "cart__btn");
     cartBtn.setAttribute("data-id", item.id);
     cartBtn.setAttribute("aria-label", "Add To Cart");
@@ -230,7 +231,6 @@ window.onload = async function () {
 
   function addToCart(event) {
     const itemId = event.target.getAttribute("data-id");
-    console.log(event.target);
     const itemInfo = {
       id: itemId,
       quantity: 1,
@@ -245,7 +245,30 @@ window.onload = async function () {
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
+    addCartTotalQuantity();
   }
+
+  function addCartTotalQuantity() {
+    let quantity = 0;
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.forEach((p) => {
+      if (p.id !== null) {
+        quantity += p.quantity;
+      }
+      let totalQuantity = document.querySelector("#cart__total-quantity");
+      console.log(quantity);
+
+      if (quantity == 0) {
+        totalQuantity.innerHTML = "";
+        totalQuantity.classList.add("deactivate");
+      } else {
+        totalQuantity.innerHTML = quantity;
+        totalQuantity.classList.remove("deactivate");
+      }
+    });
+  }
+
+  addCartTotalQuantity();
 
   /*=============== RENDER ===============*/
 
